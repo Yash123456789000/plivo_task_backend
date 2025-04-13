@@ -35,7 +35,7 @@ app.use(cors());
 // app.use("/sales", salesRoutes);
 
 app.get("/", (req, res)=>{
-  return res.status(201).message('Hello world');
+  return res.status(201).json('Hello world');
 })
 
 app.post("/register", async (req, res) => {
