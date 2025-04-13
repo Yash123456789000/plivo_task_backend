@@ -34,6 +34,10 @@ app.use(cors());
 // app.use("/management", managementRoutes);
 // app.use("/sales", salesRoutes);
 
+app.get("/", (req, res)=>{
+  return res.status(201).message('Hello world');
+})
+
 app.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
   // const newUser = new User({ name, email, password });
